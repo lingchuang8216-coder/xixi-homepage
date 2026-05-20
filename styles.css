@@ -623,6 +623,27 @@ h1 {
   font-weight: 700;
 }
 
+.video-needs-play::after {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 2;
+  content: "轻触播放视频";
+  border: 1px solid rgba(255, 250, 240, 0.24);
+  border-radius: 999px;
+  padding: 8px 11px;
+  color: var(--ivory);
+  background: rgba(17, 20, 18, 0.58);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.work-item.video-needs-play::after {
+  bottom: 56px;
+}
+
 .courses {
   padding: clamp(76px, 10vw, 132px) 24px;
   background:
